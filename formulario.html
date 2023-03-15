@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        .BT
+        {
+            width: 100px;
+            height: 70px;
+            background-color: rgb(72, 205, 238);
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .BT:hover
+        {
+            background-color: aquamarine;
+        }
+        .comentarios
+        {
+            width: 90%;
+            height: 200px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados do picole</legend>
+        Selecione um sabor:
+        <select>
+            <option>Pimenta</option>
+            <option>Morango</option>
+            <option>Flocos</option>
+            <option>Chocolate</option>
+        </select>
+        <br> <br>
+        Escolha uma cobertura especial:
+        <input type="radio" name="cobertura">morango
+        <input type="radio" name="cobertura">chocolate
+        <input type="radio" name="cobertura">baunilha
+        <br> <br> 
+        Escolha a cor da embalagem:
+        <input type="checkbox">&nbsp; preta
+        <input type="checkbox">&nbsp; rosa
+        <input type="checkbox">&nbsp; azul
+        <br> <br>
+        Escolha a cor do palito:
+        <input type="color">
+    </fieldset>
+    <legend>Dados da entrega</legend>
+    Endereço: <input type="text">
+    <br> <br>
+    Cidade: <input type="text">
+    <br> <br> 
+    Data de entrega: <input type="date">
+    <br> <br>
+    Comentarios: <br>
+    <textarea class="comentarios"> </textarea>
+    <br> 
+</fieldset>
+<button class="BT">ENVIAR</button>  
+<button class="BT">CANCELAR</button>
+</body>
+</html>
